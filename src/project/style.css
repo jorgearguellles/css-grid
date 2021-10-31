@@ -10,7 +10,7 @@ main {
 .hero {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  grid-auto-rows: 400px;
+  grid-auto-rows: 550px;
 }
 
 .hero-image {
@@ -45,14 +45,17 @@ main {
   padding: 12px 24px;
 }
 
+/* Dishes styles ==================================
+ */
+
 .dishes{
   margin: 100px 0;
 }
 
-.dishes-title{
+.dishes-title, .menu-title{
   color:#333;
   text-align: center;
-  font-weight: bold;
+  font-weight: bolder;
   margin-bottom: 50px;
   font-size: 2rem;
 }
@@ -73,4 +76,31 @@ main {
 
 .dishes-item__big{
   grid-area: 1 / 1 / 3 / 3;
+}
+
+/* Menu styles ==================================
+ */
+
+.menu {
+  margin-bottom: 200px;
+}
+
+.menu-grid{
+  display: grid;
+  grid-template-columns: repeat(5, minmax(100px, 250px));
+  justify-content: center;
+  gap: 25px;
+}
+
+.menu-grid-item{
+  background-color: rgb(250, 186, 162);
+  padding: 15px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.menu-grid-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
